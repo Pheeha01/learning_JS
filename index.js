@@ -64,3 +64,36 @@ document.getElementById(`Reset`).onclick=function(){
     numb--;
     document.getElementById(`Number`).textContent=numb
  }
+
+ //there are a lot of Math functions and to use them the syntax would be Math.*the method*(*the variable name*)
+ //Math.randow generates numbers from 0 to 1, but if you want to generate whole number you can use Math.floor()(excludes the max) or Math.ceiling()(includes the max)
+ //let x = Math.ceil(Math.random()*10);
+ //the reason we multiply by 10 is that since the max of a default random is 1, then it will now start generating from 0-9 because of the floor, its still generating decimals but then now with the floor then it forces it to choose whole numbers
+ //document.getElementById(`RandomInt`).textContent= x;
+
+ //if statements
+ let randomNum= Math.ceil(Math.random()*10);
+ let usernum= document.getElementById("guess").value;
+
+ document.getElementById("Title").textContent= `Guess a number between 0 and 10`
+
+ document.getElementById("Submit").onclick=function(){
+   document.getElementById("num").textContent = randomNum;
+   if(randomNum>usernum){
+      document.getElementById("num").textContent=`the random number is ${randomNum}, your guess is low`
+   }
+   else if(randomNum===usernum){
+      document.getElementById("num").textContent=`Your number is the correct guess`
+   }
+   else{
+      document.getElementById("num").textContent=`the random number is ${randomNum}, your guess is high`
+   }
+ }
+//a shortcut for an if statement is the ternary operators,?::,so the if statement above would be written as, ?===if, :===else
+//let result = randomNum >usernum ? `your guess is low`: `your guess is high`
+//console.log(result)
+
+
+
+
+
