@@ -93,6 +93,26 @@ document.getElementById(`Reset`).onclick=function(){
 //let result = randomNum >usernum ? `your guess is low`: `your guess is high`
 //console.log(result)
 
+//String manipulation
+
+let myname= `Tshegofatso Mabotja`;
+console.log(`dealing with string manipulation of ${myname}`) 
+console.log(myname.length);//the length of my string, how many characters does it have
+console.log(myname.charAt(0));//getting a character by its index postion, from index zero to the max length -1
+console.log(myname.toUpperCase());//turns your string to uppercase, there is toLowerCase() for lower casing
+console.log(myname.indexOf(`f`));//returns the index position number and f will be 6 and if there are many occurences of a letter in a string it will tell us the index position of the first occurence 
+console.log(myname.trim());//trims off the white space, at the begining or end of the string
+console.log(myname.startsWith(`T`));// checks if a string starts will a certain character, and returns a boolean value and the ooposit id endsWith(`a`)
+console.log(myname.includes(`g`));// checks if a string includes a certain character targeted, boolean value
+console.log(myname.replaceAll(`o`,``));//replaces all the occurences of a character with another character, so here we are replacing o with nothing
+console.log(myname.padStart(17,`-`));//adds characters to a string
+console.log(``)
+//string slicing
+
+console.log(`slicing strings`)
+console.log(myname.slice(3, 10))
+
+
 
 
 
