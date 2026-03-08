@@ -16,3 +16,17 @@
     background-color: aquamarine;
 }
 
+.wordCount{
+    text-align: center;
+}
+#userSentence{
+    width: 80%
+}
+#counter{
+    background-color: #2B579A;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    color: aliceblue;
+}

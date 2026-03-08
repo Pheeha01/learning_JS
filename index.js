@@ -113,7 +113,31 @@ console.log(``)
 console.log(`slicing strings`)
 console.log(myname.slice(3, 10))
 
+//word count javascript
 
+document.getElementById("counter").onclick=function(){
+   let sente = document.getElementById("userSentence").value;
+   let count = 1;
+   for(let i=0; i < sente.length;i++){
+      if (sente.charAt(i)== " " && sente.charAt(i+1)!==" " && sente.charAt(0)!== " " && sente.length>0){
+         count++
+      }
+      else{
+         continue;
+      }
+   }
+   
+   if (count>=1) {
+      if (sente[sente.length-1]===" "){
+      count--
+      }
+      document.getElementById("wordCount").textContent= `The word count is: ${count}`;
+   }
+   else{
+      document.getElementById("wordCount").textContent= `There are no words`;
+   }
+
+}
 
 
 
