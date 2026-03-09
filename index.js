@@ -126,11 +126,10 @@ document.getElementById("counter").onclick=function(){
          continue;
       }
    }
-   
-   if (count>=1) {
-      if (sente[sente.length-1]===" "){
+   if (sente[sente.length-1]===" "){
       count--
       }
+   if (count>=1) {
       document.getElementById("wordCount").textContent= `The word count is: ${count}`;
    }
    else{
