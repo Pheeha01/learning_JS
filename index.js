@@ -114,19 +114,19 @@ console.log(`slicing strings`)
 console.log(myname.slice(3, 10))
 
 //word count javascript
-
-document.getElementById("counter").onclick=function(){
-   let sente = document.getElementById("userSentence").value;
+let counter = document.getElementById("counter")
+counter.addEventListener(`click`, function(){
+   let sente = document.getElementById("userSentence").value.trim();
    let count = 1;
    for(let i=0; i < sente.length;i++){
-      if (sente.charAt(i)== " " && sente.charAt(i+1)!==" " && sente.charAt(0)!== " " && sente.length>0){
+      if (sente.charAt(i)== " " && sente.charAt(i+1)!==" " && sente.length>0){
          count++
       }
       else{
          continue;
       }
    }
-   if (sente[sente.length-1]===" "){
+   if (sente[sente.length-1]===" " || sente.length ===0){
       count--
       }
    if (count>=1) {
@@ -135,7 +135,7 @@ document.getElementById("counter").onclick=function(){
    else{
       document.getElementById("wordCount").textContent= `There are no words`;
    }
-}
+})
 
 //method chaining, chaining methods to one another for effective coding
 //let yourName= window.prompt("Enter your name:")
