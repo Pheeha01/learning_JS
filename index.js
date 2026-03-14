@@ -135,9 +135,14 @@ document.getElementById("counter").onclick=function(){
    else{
       document.getElementById("wordCount").textContent= `There are no words`;
    }
-
 }
 
+//method chaining, chaining methods to one another for effective coding
+//let yourName= window.prompt("Enter your name:")
+//let displayName = document.getElementById("displayName")
+//yourName = yourName.trim()
+//let fixedString = yourName.slice(0, 1).toUpperCase()+yourName.slice(1).toLowerCase()
+//displayName.value = fixedString
 
 
 
