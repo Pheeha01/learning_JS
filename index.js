@@ -50,21 +50,6 @@ console.log(students)
     APS = Number(APS)
     document.getElementById(`Details`).textContent= `Your name is ${username} and you are ${Age} years old and your APS is ${APS}`
  }
-
-let numb=0;
- document.getElementById(`Increase`).onclick=function(){
-    numb++
-    document.getElementById(`Number`).textContent=numb
- }
-document.getElementById(`Reset`).onclick=function(){
-    document.getElementById(`Number`).textContent=0
-    numb=0
- }
- document.getElementById(`Decrease`).onclick=function(){
-    numb--;
-    document.getElementById(`Number`).textContent=numb
- }
-
  //there are a lot of Math functions and to use them the syntax would be Math.*the method*(*the variable name*)
  //Math.randow generates numbers from 0 to 1, but if you want to generate whole number you can use Math.floor()(excludes the max) or Math.ceiling()(includes the max)
  //let x = Math.ceil(Math.random()*10);
@@ -73,23 +58,7 @@ document.getElementById(`Reset`).onclick=function(){
 
  //if statements
 
- document.getElementById("Title").textContent= `Guess a number between 0 and 10`
- document.getElementById("num").textContent = ``;
 
- document.getElementById("Submit").onclick=function(){
-    let randomNum= Math.ceil(Math.random()*10);
-   let usernum= document.getElementById("guess").value;
-
-   if(randomNum > usernum){
-      document.getElementById("num").textContent=`the random number is ${randomNum}, your guess is low`
-   }
-   else if(randomNum == usernum){
-      document.getElementById("num").textContent=`Your number is the correct guess`
-   }
-   else{
-      document.getElementById("num").textContent=`the random number is ${randomNum}, your guess is high`
-   }
- }
 //a shortcut for an if statement is the ternary operators,?::,so the if statement above would be written as, ?===if, :===else
 //let result = randomNum >usernum ? `your guess is low`: `your guess is high`
 //console.log(result)
@@ -114,28 +83,7 @@ console.log(`slicing strings`)
 console.log(myname.slice(3, 10))
 
 //word count javascript
-let counter = document.getElementById("counter")
-counter.addEventListener(`click`, function(){
-   let sente = document.getElementById("userSentence").value.trim();
-   let count = 1;
-   for(let i=0; i < sente.length;i++){
-      if (sente.charAt(i)== " " && sente.charAt(i+1)!==" " && sente.length>0){
-         count++
-      }
-      else{
-         continue;
-      }
-   }
-   if (sente[sente.length-1]===" " || sente.length ===0){
-      count--
-      }
-   if (count>=1) {
-      document.getElementById("wordCount").textContent= `The word count is: ${count}`;
-   }
-   else{
-      document.getElementById("wordCount").textContent= `There are no words`;
-   }
-})
+
 
 //method chaining, chaining methods to one another for effective coding
 //let yourName= window.prompt("Enter your name:")
