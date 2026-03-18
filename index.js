@@ -84,7 +84,6 @@ console.log(myname.slice(3, 10))
 
 //word count javascript
 
-
 //method chaining, chaining methods to one another for effective coding
 //let yourName= window.prompt("Enter your name:")
 //let displayName = document.getElementById("displayName")

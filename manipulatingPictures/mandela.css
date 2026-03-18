@@ -1,0 +1,19 @@
+#pics{
+    display: flex;
+    width: 120px;
+    height: 120px;
+}
+
+img{
+    margin-right: 5px;
+}
+#favourites{
+    width: 100%;
+    display: block;
+    grid-column: (4, 1fr);
+    height: 220px;
+}
+
+#pics > .mandela{
+    border-radius: 20px;
+}
