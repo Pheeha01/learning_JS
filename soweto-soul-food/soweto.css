@@ -1,0 +1,11 @@
+*{
+    font-family: sans-serif;
+    background-color: #FFB131;
+    width: 750px;
+    
+
+}
+#main-content{
+    background-color: white;
+    border:5px black solid;
+}
