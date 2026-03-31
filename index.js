@@ -91,5 +91,29 @@ console.log(myname.slice(3, 10))
 //let fixedString = yourName.slice(0, 1).toUpperCase()+yourName.slice(1).toLowerCase()
 //displayName.value = fixedString
 
+let fruits = ["banana", "apple", "coconut", "strawberry"]
+for(i=0; i<fruits.length; i++){
+   console.log(fruits[i])
+}
+console.log("adding an element at the end of an array, more like pushing in elements")
+fruits.push("orange"); 
+for(i=0; i<fruits.length; i++){
+   console.log(fruits[i])
+}
+console.log("by default it pops out the last element of the array")
+fruits.pop(); 
+for(i=0; i<fruits.length; i++){
+   console.log(fruits[i])
+}
+console.log("adds an element at the begining")
+fruits.unshift("nartjie"); 
+for(i=0; i<fruits.length; i++){
+   console.log(fruits[i])
+}
+console.log("reversing elements")
+fruits.reverse();
+for(i=0; i<fruits.length; i++){
+   console.log(fruits[i])
+}
 
 

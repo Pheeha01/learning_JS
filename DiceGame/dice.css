@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+*{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#selectDice{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+}
+p{
+    font-weight: bold;
+}
+button{
+    background-color: aqua;
+    color: aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+    border: black 2px solid;
+}
+.face{
+    display: none;
+}
+.face.active{
+    display: flex;
+    width: 120px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.diceValues{
+    display: flex;
+}
